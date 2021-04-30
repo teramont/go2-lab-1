@@ -1,0 +1,19 @@
+go_testbin {
+  // Module (and output) name.
+  name: "binary",
+
+  // Go package to build.
+  pkg: "github.com/teramont/go2-lab-1/example/binary",
+
+  testPkg: "github.com/teramont/go2-lab-1/example/binary",
+
+  // Build inputs.
+  srcs: ["**/*.go", "../go.mod"]
+}
+
+js_bundle {
+  name: "my-script",
+  srcs: ["./file1.js", "./file2.js"],
+  obfuscate: true,
+  path: "./js",
+}
