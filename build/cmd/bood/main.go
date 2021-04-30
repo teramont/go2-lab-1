@@ -10,6 +10,7 @@ import (
 	"github.com/google/blueprint"
 	"github.com/roman-mazur/bood"
 	"github.com/teramont/go2-lab-1/build/gomodule/testbin"
+	"github.com/teramont/go2-lab-1/build/gomodule/jsbundle"
 )
 
 var (
@@ -20,6 +21,7 @@ var (
 func NewContext() *blueprint.Context {
 	ctx := bood.PrepareContext()
 	ctx.RegisterModuleType("go_testbin", testbin.TestedBinaryFactory)
+	ctx.RegisterModuleType("js_bundle", jsbundle.JsBundleFactory)
 	return ctx
 }
 
