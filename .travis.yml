@@ -1,0 +1,24 @@
+language: go
+dist: focal
+go:
+  - 1.15
+
+addons: 
+  apt: 
+    update: true
+    packages: 
+      - ninja-build
+      - npm 
+
+install:
+  - npm install webpack
+  - npm i webpack-cli
+  - npm i webpack-obfuscator
+  - npm i javascript-obfuscator
+
+script: 
+  - cd ./build
+  - go build ./cmd/bood/main.go
+  - ./main
+  - chmod 777 ../build/out/bin/bood
+  - cd ../example && ../build/out/bin/bood
