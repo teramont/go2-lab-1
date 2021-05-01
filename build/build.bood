@@ -1,4 +1,4 @@
-go_binary {
+go_testbin {
   // Module (and output) name.
   name: "bood",
 
