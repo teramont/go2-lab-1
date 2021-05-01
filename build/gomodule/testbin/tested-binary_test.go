@@ -1,4 +1,4 @@
-package testedbinary
+package testbin
 
 import (
 	"bytes"

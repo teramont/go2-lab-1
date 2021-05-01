@@ -1,4 +1,4 @@
-package gomodule
+package testbin
 
 import (
 	"fmt"
