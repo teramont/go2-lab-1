@@ -3,7 +3,7 @@ go_testbin {
   name: "bood",
 
   // Go package to build.
-  pkg: "github.com/roman-mazur/design-practice-1-template/build/cmd/bood",
+  pkg: "github.com/teramont/go2-lab-1/build/cmd/bood",
 
   // Build inputs.
   srcs: ["**/*.go", "../go.mod"]
